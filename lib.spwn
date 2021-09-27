@@ -1,0 +1,8 @@
+hsv_encode = (hue,sat,bright,sat_checked = false,bright_checked = false){
+    
+    let sat_0 = 1 if sat_checked else 0
+    let bright_0 = 1 if bright_checked else 0
+    
+    return @string(hue) + 'a' + @string(sat) + 'a' + @string(bright) + 'a' + @string(sat_0) + 'a' + @string(bright_0)
+}
+return hsv_encode
